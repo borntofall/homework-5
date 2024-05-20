@@ -37,7 +37,7 @@ public class Main {
 
         int year = 1596;
 
-        if (year % 400 == 0 && year % 100 != 0 || year % 4 == 0) {
+        if (year % 400 == 0 && year % 4 == 0 || year % 100 != 0) {
             System.out.printf("%s год является високосным \n", year);
         } else {
             System.out.printf("%s год не является високосным \n", year);
@@ -62,7 +62,7 @@ public class Main {
 
         System.out.println("Задача 5");
 
-        int monthNumber = 13;
+        int monthNumber = 0;
 
         switch (monthNumber) {
             case 1:
