@@ -35,12 +35,74 @@ public class Main {
 
         System.out.println("Задача 3");
 
-        int year = 1589;
+        int year = 1596;
 
-        if (year % 400 == 0) {
-
+        if (year % 400 == 0 && year % 100 != 0 || year % 4 == 0) {
+            System.out.printf("%s год является високосным \n", year);
+        } else {
+            System.out.printf("%s год не является високосным \n", year);
         }
 
+        System.out.println("Задача 4");
 
+        int deliveryDistance = 99;
+        int deliveryDays = 1;
+        if (deliveryDistance < 20) {
+            System.out.printf("Потребуется дней на доставку: %s\n", deliveryDays);
+        }
+        if (deliveryDistance >= 20 && deliveryDistance < 60) {
+            System.out.printf("Потребуется дней на доставку: %s\n", deliveryDays + 1);
+        }
+        if (deliveryDistance >= 60 && deliveryDistance < 100) {
+            System.out.printf("Потребуется дней на доставку: %s\n", deliveryDays + 2);
+        }
+        if (deliveryDistance >= 100) {
+            System.out.println("Свыше 100 км доставки нет");
+        }
+
+        System.out.println("Задача 5");
+
+        int monthNumber = 13;
+
+        switch (monthNumber) {
+            case 1:
+                System.out.println("Январь принадлежит к сезону зима");
+                break;
+            case 2:
+                System.out.println("Февраль принадлежит к сезону зима");
+                break;
+            case 3:
+                System.out.println("Март принадлежит к сезону весна");
+                break;
+            case 4:
+                System.out.println("Апрель принадлежит к сезону весна");
+                break;
+            case 5:
+                System.out.println("Май принадлежит к сезону весна");
+                break;
+            case 6:
+                System.out.println("Июнь принадлежит к сезону лето");
+                break;
+            case 7:
+                System.out.println("Июль принадлежит к сезону лето");
+                break;
+            case 8:
+                System.out.println("Август принадлежит к сезону лето");
+                break;
+            case 9:
+                System.out.println("Сентябрь принадлежит к сезону осень");
+                break;
+            case 10:
+                System.out.println("Октябрь принадлежит к сезону осень");
+                break;
+            case 11:
+                System.out.println("Ноябрь принадлежит к сезону осень");
+                break;
+            case 12:
+                System.out.println("Декабрь принадлежит к сезону зима");
+                break;
+            default:
+                System.out.println("Неверное значение");
+        }
     }
 }
