@@ -5,18 +5,17 @@ public class Main {
         int clientOs = 1;
         if (clientOs == 0) {
             System.out.println("Установите версию приложения для iOS по ссылке");
+        } else if (clientOs == 1) {
+            System.out.println("Установите версию приложения для Android по ссылке");
         } else {
-            if (clientOs == 1) {
-                System.out.println("Установите версию приложения для Android по ссылке");
-            } else {
-                System.out.println("Вы ввели неправильные данные");
-            }
+            System.out.println("Вы ввели неправильные данные");
         }
+
 
         System.out.println("Задача 2");
 
-        clientOs = 1;
-        int clientDeviceYear = 2111;
+        clientOs = 0;
+        int clientDeviceYear = 2017;
 
         if (clientOs == 0) {
             if (clientDeviceYear < 2015) {
@@ -62,7 +61,7 @@ public class Main {
 
         System.out.println("Задача 5");
 
-        int monthNumber = 0;
+        int monthNumber = 12;
 
         switch (monthNumber) {
             case 1:
