@@ -61,9 +61,12 @@ public class Main {
 
         System.out.println("Задача 5");
 
-        int monthNumber = 12;
+        int monthNumber = 13;
 
-        switch (monthNumber) {
+        if (monthNumber < 1 || monthNumber > 12) {
+            System.out.println("Неверное значение");
+        } else switch (monthNumber) {
+
             case 1:
                 System.out.println("Январь принадлежит к сезону зима");
                 break;
@@ -100,8 +103,6 @@ public class Main {
             case 12:
                 System.out.println("Декабрь принадлежит к сезону зима");
                 break;
-            default:
-                System.out.println("Неверное значение");
         }
     }
 }
