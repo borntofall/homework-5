@@ -51,7 +51,7 @@ public class Main {
             System.out.printf("Потребуется дней на доставку: %s\n", deliveryDays + 1);
         }
         if (deliveryDistance >= 60 && deliveryDistance < 100) {
-            System.out.printf("Потребуется дней на доставку: %s\n", deliveryDays + 2);
+            System.out.printf("Потребуется дней на доставку : %s\n", deliveryDays + 2);
         }
         if (deliveryDistance >= 100) {
             System.out.println("Свыше 100 км доставки нет");
