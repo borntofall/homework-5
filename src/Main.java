@@ -14,32 +14,30 @@ public class Main {
 
         System.out.println("Задача 2");
 
-        clientOs = 0;
-        int clientDeviceYear = 2017;
+        clientOs = 1;
+        int clientDeviceYear = 2014;
 
-        if (clientOs == 0) {
-            if (clientDeviceYear < 2015) {
+        if (clientOs == 0 && clientDeviceYear < 2015) {
                 System.out.println("Установите облегченную версию приложения для iOS по ссылке");
-            } else {
+            } else if (clientOs == 0) {
                 System.out.println("Установите версию приложения для iOS по ссылке");
             }
-        }
-        if (clientOs == 1) {
-            if (clientDeviceYear < 2015) {
+
+        if (clientOs == 1 && clientDeviceYear < 2015) {
                 System.out.println("Установите облегченную версию приложения для Android по ссылке");
-            } else {
+            } else if (clientOs == 1) {
                 System.out.println("Установите версию приложения для Android по ссылке");
             }
-        }
+
 
         System.out.println("Задача 3");
 
-        int year = 1596;
+        int year = 1597;
 
-        if (year % 400 == 0 && year % 4 == 0 || year % 100 != 0) {
-            System.out.printf("%s год является високосным \n", year);
+        if ((year % 400 == 0) || (year % 4 == 0 && year % 100 != 0)) {
+            System.out.printf("%d год является високосным \n", year);
         } else {
-            System.out.printf("%s год не является високосным \n", year);
+            System.out.printf("%d год не является високосным \n", year);
         }
 
         System.out.println("Задача 4");
